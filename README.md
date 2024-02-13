@@ -2,44 +2,19 @@
 This is Module 5 SQL practice. 
 
 ## Step 1 Environment Setup and Project Start
-1. Create a GitHub project repository with a default README.md.
- - [Quickstart for Repositories - GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories)
-
-2. Clone your repo down to your machine.
- -  Open a terminal in your Documents folder and clone the repo to your machine: 
+Create a GitHub project repository with a default README.md.
+Open a terminal and clone the repo down to the local machine.
  ```python
- 'git clone https://github.com/tfmontague/datafun-05-sql'
+ 'git clone https://github.com/JingyuanDainmsu/datafun-05-sql'
  ```
-
-3. Open your project folder in VS Code (if you haven't already): 
-```python
-'code .'
-```
-
-4. Add a .gitignore with .vsode/ and .venv/ and whatever else doesn't need to go in the repo:
- - Create a new file in the root folder of your project named .gitignore (using touch, ni, or your editor). Open .gitignore and add the following to ignore the .venv/ folder and .vscode (your editor settings).
-```python
-'.venv/
-.vscode/'
-```
-
-5. Create and activate a local virtual environment in .venv.
+Create and activate a virtual environment in the local machine.
 'python -m venv .venv'
 ```python
 '.venv\Scripts\activate'
 ```
-
-6. Install your dependencies into your .venv and freeze your requirements.txt.
-```python
-'python -m pip install logging'
-```
- - verify if sqlite3 is installed in your Python in terminal using: 'python -c "import sqlite3"; print(sqlite3.sqlite_version)'
- - if not, use  'pip install sqlite3' or 'pip install pysqlite3' to install
-
-7. Record the commands used in your README.md.
- - [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file)
-
-8. Git add and commit with a useful message (e.g. "initial commit") and push to GitHub.
+Install the dependencies into the virtual environment .venv.
+Freeze the requirements.txt
+Git add and commit with a useful message (e.g. "initial commit") and push to GitHub.
 ```python
 'git add .'
 ```
@@ -47,40 +22,22 @@ This is Module 5 SQL practice.
 'git commit -m "initial commit".'
 ```
 
-9. Create your first project files (usually in VS Code).
-- tmontague_sql.py
-
-## CC5.2 Use SQL with Python Assignment
-1. Ensure CC5.1 steps are complete
-
-2. Activate a local virtual environment in .venv.
+## Step 2 Use SQL with Python 
+Activate a local virtual environment in .venv.
 ```python
 '.venv\Scripts\activate'
 ```
+Install necesary dependencies in .venv
+Freeze the requirements.txt
+Check .gitignore.
 
-3. Install pandas in .venv
-```python
-'pip install pandas'
-```
+## Step 3 Create the Data Files
+Create new data folder in project repository folder.
+Create csv files into the data folder.
 
-4. Run pip freeze and redirect the results (>) into requirements.txt
-```python
-'pip freeze > requirements.txt'
-```
-
-5. Checked .gitignore to ensure that .venv will not be pushed to GitHub
-
-
-## CC5.3 Plan the Project / Make Data Files
-1. Create new data folder in project repository folder
-
-2. Create 2 data csv files with provided data
-
-
-## CC5.4 Initialize the Database
-1. Create new sql folder in project repository folder
-
-2. Create a Python file (module and script) named 'book_manager.py'. in VS code in the root project repository folder with the following code:
+## Step 4 Initialize the Database
+Create new sql folder in project repository folder
+Create a Python file 'book_manager.py'. in the root project repository folder with the following code:
 
 ```python
 import sqlite3
@@ -140,7 +97,7 @@ if __name__ == "__main__":
     main()
 ```
 
-3. Create a SQL file named 'create_tables.sql' in the sql folder created in step 1 with the following code:
+Create a SQL file named 'create_tables.sql' in the sql folder with the following code:
 
 ```markdown
 -- Start by deleting any tables if the exist already
